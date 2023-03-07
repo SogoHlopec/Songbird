@@ -1,4 +1,4 @@
-# Travel
+# Songbird
 Songbird is a quiz app for recognizing birds by their voices. This project was created while studying at RS SHOOL https://rs.school/index.html Stage 1 2022q3
 
 ## Task:
