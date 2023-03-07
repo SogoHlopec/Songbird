@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="763b97e0bec56d702dee.ico">
+    <title>Главная страница</title>
+  <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <a href="./index.html" class="header__logo"></a>
+        <nav class="header__nav">
+          <ul class="menu header__menu">
+            <li class="menu__item menu__item_active">
+              <a href="./index.html" class="menu__link menu__link_active">Главная страница</a>
+            </li>
+            <li class="menu__item">
+              <a href="./quiz-page.html" class="menu__link">Викторина</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link-result">Результат</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn-audio header__btn-audio_unmute"></button>
+        <audio
+          src="6f94302aad463e641801.mp3"
+          autoplay
+          loop
+          class="header__audio"
+        ></audio>
+      </header>
+
+      <main class="main">
+        <div class="main-wrapper">
+          <h1 class="main__title">Добро пожаловать!</h1>
+          <h2 class="main__subtitle">
+            Сможешь ли ты узнать всех птиц по их чудным голосам?<br />
+            Давай проверим!
+          </h2>
+          <button class="main__btn-start">
+            <a href="./quiz-page.html" class="btn-start__link">Начать игру</a>
+          </button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <p class="footer__year">2022</p>
+          <a href="https://github.com/SogoHlopec" class="footer__link-github">
+            GitHub: SogoHlopec
+          </a>
+          <a href="https://rs.school/js/" class="footer__rss-logo"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
