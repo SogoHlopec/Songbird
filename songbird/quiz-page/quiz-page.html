@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Викторина</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <a href="./index.html" class="header__logo"></a>
+        <nav class="header__nav">
+          <ul class="menu header__menu">
+            <li class="menu__item menu__item_active">
+              <a href="./index.html" class="menu__link">Главная страница</a>
+            </li>
+            <li class="menu__item">
+              <a href="./quiz-page.html" class="menu__link menu__link_active">Викторина</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link-result">Результат</a>
+            </li>
+          </ul>
+        </nav>
+        <h4 class="score header__score">
+          Score: <span class="score__value">0</span>
+        </h4>
+      </header>
+
+      <main class="main">
+        <div class="main-wrapper">
+          <section class="level main__level">
+            <ul class="level__nav">
+              <li class="level__item level__item_active">Разминка</li>
+              <li class="level__item">Воробьиные</li>
+              <li class="level__item">Лесные птицы</li>
+              <li class="level__item">Певчие птицы</li>
+              <li class="level__item">Хищные птицы</li>
+              <li class="level__item">Морские птицы</li>
+            </ul>
+          </section>
+
+          <section class="puzzle main__puzzle">
+            <div class="bird-img puzzle__bird-img"></div>
+
+            <div class="puzzle__mystery">
+              <h3 class="puzzle__bird-name">******</h3>
+
+              <div class="player puzzle__player">
+                <div class="player__wrapper">
+                  <button
+                    class="player__btn-sound player__btn-sound_play"
+                  ></button>
+                  <span class="player__time player__current-time">0:00</span>
+                  <input
+                    type="range"
+                    max="100%"
+                    value="0"
+                    class="player__seek-slider"
+                  />
+                  <span class="player__time player__duration">0:00</span>
+                </div>
+                <input
+                  type="range"
+                  max="100"
+                  value="100"
+                  class="player__volume"
+                />
+                <button
+                  class="player__btn-volume player__btn-volume_unmute"
+                ></button>
+                <audio
+                  src="https://www.xeno-canto.org/sounds/uploaded/XIQVMQVUPP/XC518684-Grands%20corbeaux%2009012020%20Suzon.mp3"
+                  preload="metadata"
+                  class="player__sound"
+                ></audio>
+              </div>
+            </div>
+          </section>
+
+          <div class="section-wrapper">
+            <section class="quiz-list main__quiz-list">
+              <audio
+                src="../assets/audio/win.mp3"
+                preload="auto"
+                class="quiz-list__audio-win"
+              ></audio>
+              <audio
+                src="../assets/audio/error.mp3"
+                preload="auto"
+                class="quiz-list__audio-error"
+              ></audio>
+            </section>
+            <section class="description main__description">
+              <p class="description__instruction">
+                Послушайте плеер. Выберите птицу из списка.
+              </p>
+            </section>
+          </div>
+
+          <button class="main__btn-next">Далее</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <p class="footer__year">2022</p>
+          <a href="https://github.com/SogoHlopec" class="footer__link-github">
+            GitHub: SogoHlopec
+          </a>
+          <a href="https://rs.school/js/" class="footer__rss-logo"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

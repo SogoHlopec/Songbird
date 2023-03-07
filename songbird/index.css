@@ -1,0 +1,268 @@
+/* !basic stysle */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #222222;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* !header style */
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 50px 15px 10px 15px;
+}
+
+.header__logo {
+  display: block;
+  min-width: 200px;
+  min-height: 55px;
+  background-image: url(./assets/icon/logo-songbird.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__nav {
+  width: 580px;
+}
+
+.header__menu {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #008966;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.menu__link-result {
+  background: #303030;
+}
+
+.menu__link:hover {
+  background-color: #00bc8c;
+}
+
+.menu__link-result:hover {
+  cursor: default;
+  background: #303030;
+}
+
+.menu__link_active {
+  background-color: #00bc8c;
+}
+
+.header__btn-audio {
+  min-width: 40px;
+  height: 30px;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header__btn-audio:hover {
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+
+.header__btn-audio_unmute {
+  background-image: url(./assets/icon/btn-audio-unmute.svg);
+  background-repeat: no-repeat;
+}
+
+.header__btn-audio_mute {
+  background-image: url(./assets/icon/btn-audio-mute.svg);
+}
+
+/* !main style */
+
+.main {
+  width: 100%;
+  height: 784px;
+  background-image: url(./assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.main-wrapper {
+  margin: 0 47px;
+  padding-top: 30px;
+}
+
+.main__title {
+  margin: 0 0 25px 0;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.main__subtitle {
+  max-width: 483px;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.main__btn-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background-color: #008966;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 10vh auto 0 auto;
+  cursor: pointer;
+}
+
+.btn-start__link {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.main__btn-start:hover {
+  background-color: #00bc8c;
+}
+
+/* !footer style */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  margin-top: -60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__year {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.footer__link-github {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.footer__link-github:hover {
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+
+.footer__rss-logo {
+  min-width: 120px;
+  min-height: 40px;
+  text-decoration: none;
+  background-image: url(./assets/icon/rss-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.footer__rss-logo:hover {
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+
+/* !MEDIA */
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__menu {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main__title {
+    font-size: 3rem;
+  }
+
+  .main__subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .main-wrapper {
+    margin: 0 15px;
+  }
+  .footer {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer__rss-logo {
+    min-height: 30px;
+  }
+}
