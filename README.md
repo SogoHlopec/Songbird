@@ -11,10 +11,10 @@ Songbird is a quiz app for recognizing birds by their voices. This project was c
 * HTML5
 * CSS3
 * JavaScript
+* ES6 modules
 * Webpack 5
 * Figma
 
 ## Features:
 * Custom audio player
 * Adaptive
-* ES6 modules
