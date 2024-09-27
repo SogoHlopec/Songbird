@@ -18,3 +18,9 @@ Songbird is a quiz app for recognizing birds by their voices. This project was c
 ## Features:
 * Custom audio player
 * Adaptive
+
+## Desktop
+![desktop](https://github.com/SogoHlopec/Songbird/blob/main/desktop.jpg)
+
+## Mobile
+![mobile](https://github.com/SogoHlopec/Songbird/blob/main/mobile.jpg)
